@@ -1,0 +1,113 @@
+// PT.1 WORKS
+var node_mainnavs = document.getElementsByClassName("nav mainnavs")[0];
+var node_parent_mainnavs = node_mainnavs.parentNode;
+node_parent_mainnavs.removeChild(node_mainnavs);
+
+// PT.2 WORKS
+var my_sidebar = document.getElementById("sidebar");
+var my_sidebar_length = my_sidebar.children.length;
+for (var i = 0; i < my_sidebar_length; ++i) {
+	if (i != 3) {
+		if (i < 3) {
+			my_sidebar.removeChild(my_sidebar.children[0]);
+		}
+		else {
+			my_sidebar.removeChild(my_sidebar.children[1]);
+		}
+	}
+}
+
+// PT.3 WORKS
+var comments_bar = document.getElementsByClassName("comments");
+var comments_bar_length = comments_bar.length;
+for (var i = 0; i < comments_bar_length; ++i) {
+	comments_bar[0].parentNode.removeChild(comments_bar[0]);
+}
+
+// PT.4 WORKS
+var bottom_bar = document.getElementsByClassName("fw");
+var bottom_bar_length = bottom_bar.length;
+for (var i = 0; i < bottom_bar_length; ++i) {
+	bottom_bar[0].parentNode.removeChild(bottom_bar[0]);
+
+
+
+}
+
+// PT.5 WORKS
+var comments_link = document.getElementsByClassName("comments-link");
+var comments_link_length = comments_link.length;
+for (var i = 0; i < comments_link_length; ++i) {
+	comments_link[0].parentNode.removeChild(comments_link[0]);
+
+
+
+}
+
+
+
+var expander = document.getElementsByClassName("post-text");
+var expander_length = expander.length;
+for (var i = 0; i < expander_length; ++i) {
+		expander[i].style.width = "100%";
+	}
+
+
+
+
+
+/*
+var my_sidebar = document.getElementById("sidebar");
+var my_sidebar_length = my_sidebar.children.length;
+for (var i = 0; i < my_sidebar_length; ++i) {
+	if (i != 3) {
+		if (i < 3) {
+			my_sidebar.removeChild(my_sidebar.children[0]);
+		}
+		else {
+			my_sidebar.removeChild(my_sidebar.children[1]);
+	
+		}
+	}
+}
+// Nodelist is an array of nodes(elements)
+// Get all images using tagname
+var nodelist_images = document.getElementsByTagName('img');
+var nodelist_skills = document.getElementsByTagName('p');
+var nodelist_divs = document.getElementsByTagName('div');
+// get elements by class
+var ass = document.getElementsByClassName('question-status');
+var ass2 = document.getElementsByClassName('user-info user-hover');
+var ass3 = document.getElementById('nav-users');
+ass3.parentNode.removeChild(ass3);
+var ass4 = document.getElementById('nav-docs');
+ass4.parentNode.removeChild(ass4);
+var ass5 = document.getElementById('nav-badges');
+ass5.parentNode.removeChild(ass5);
+var ass6 = document.getElementById('nav-jobs');
+ass6.parentNode.removeChild(ass6);
+var ass7 = document.getElementById('nav-tags');
+ass7.parentNode.removeChild(ass7);
+/*var ass8 = document.getElementsByClassName('comment-text');
+for (var i = 0, l = ass8.length; i < l; i++) {
+	ass8[0].parentNode.removeChild(ass8[0]);
+}
+ass[0].parentNode.removeChild(ass[0]);
+for (var i = 0, l = ass2.length; i < l; i++) {
+	ass2[0].parentNode.removeChild(ass2[0]);
+}
+for (var i = 0, l = images.length; i < l; i++) {
+  images[i].src = 'http://placekitten.com/' + images[i].width + '/' + images[i].height;
+  
+}
+for (var i = 0, l = skills.length; i < l; i++) {
+	skills[i].innerHTML = "Ayman you bitchass";
+}
+for (var i = 0, l = divs.length; i < l; i++) {
+	if(divs[i].id == "sidebar" || divs[i].id == "herobox"){
+		divs[i].parentNode.removeChild(divs[i]);
+	}else if(divs[i].class == "user-info user-hover"){
+		divs[i].parentNode.removeChild(divs[i]);
+	}
+}
+*/
